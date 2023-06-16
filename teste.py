@@ -160,7 +160,7 @@ print(numero_favorito)
 mensagem = input('Escreva uma mensagem: ')
 print(mensagem)
 
-"""
+
 
 
 alunos = ["joao","pedro","jorge","ana","rui"]
@@ -170,3 +170,109 @@ for aluno in alunos:
             print(f'Adeus {aluno}')
         else:
             print(f'Olá {aluno}')
+
+
+
+def cidade_distrito(cidade, distrito):
+    print(f'Eu sou de {cidade.title()}')
+    print(f'A cidade de {cidade.title()} pretence ao distrito de {distrito.title()}')
+
+
+
+def letras_grandes(lista):
+    for i in range(0, len(lista)):
+        lista[i] = lista[i].upper()
+
+
+
+utilizadores = ["ana","raquel","admin"]
+letras_grandes(utilizadores)
+print(utilizadores)
+
+
+
+
+def cidade_distrito(cidade, distrito='porto'):
+    print(f'Eu sou de {cidade.title()}')
+    print(f'A cidade de {cidade.title()} pretence ao distrito de {distrito.title()}')
+
+cidade_distrito("figueira","coimbra")
+
+
+def criar_lista(*alimento):
+    return list(alimento)
+
+
+pizza = criar_lista("tomate")
+print(pizza)
+
+
+
+
+def despedida(lista_nomes):
+    for nome in lista_nomes:
+        print(f'Adeus {nome}!')
+
+
+utilizadores = ["ana","raquel","admin"]
+despedida(utilizadores)
+
+
+
+def amo_python():
+    print('Eu amo python')
+
+amo_python()
+
+
+
+
+def obter_nome_todo(nome, sobre_nome, nome_do_meio=""):
+    if nome_do_meio:
+        nome = f'{nome.title()} {nome_do_meio.title()} {sobre_nome.title()}'
+    else:
+        nome = f'{nome.title()} {sobre_nome.title()}'
+    return nome
+
+valor = obter_nome_todo("simao","ribeiro")
+print(valor)
+
+valor = obter_nome_todo("simao","ribeiro","mendes")
+print(valor)
+
+
+
+
+def pessoa(nome, sobrenome, idade=''):
+    dicionarario = {
+        'nome': nome,
+        'sobrenome': sobrenome, 
+        }
+    if idade:
+        dicionarario['idade'] = idade
+    return dicionarario
+
+
+musico1 = pessoa('rui', 'veloso', idade=100)
+print(musico1)
+
+musico1 = pessoa('rui', 'veloso')
+print(musico1)
+
+
+
+def despedida(nome):
+    print(f'Adeus {nome}!')
+
+"""
+
+
+def criar_dicionario(**kargs):
+    return kargs
+
+utilizador = criar_dicionario(nome="simao",sobernome="ribeiro",local="Porto",area="python")
+print(utilizador)
+
+	
+{'nome': 'simao', 'sobernome': 'ribeiro', 'local': 'Porto', 'area': 'python'}
+{'nome': 'simao', 'sobernome': 'ribeiro', 'local': 'Porto', 'area': 'python'}
