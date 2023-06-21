@@ -1,0 +1,5 @@
+Em Python temos as seguintes estruturas de dados:
+Listas
+Dicionarios
+Tuplas
+Sets
