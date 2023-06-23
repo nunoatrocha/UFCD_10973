@@ -1,12 +1,11 @@
-lista_convidados = 'registo_convidados.txt'
+numero_1 = input('Digite o primeiro número: ')
+numero_2 = input('Digite o segundo número: ')
 
-while True:
-    nome = input('\nDigite o seu nome: ')
-    print(f'Olá {nome} foi adicionado com sucesso.\n')
-    with open(lista_convidados, 'a', encoding='utf-8') as convidado:
-        convidado.write(nome + '\n')
-    sair = input('Deseja acrescentar mais algum convidado [s/n]: ')
-    if sair == 'n':
-        break
+try:
+    soma = int(numero_1) + int(numero_2)
+except ValueError:
+    print('Digite numeros intereiros')
+else:
+    print(f'Resultado da soma: {soma}')
 
-print('\nNuno Rocha')
+print('Nuno Rocha')

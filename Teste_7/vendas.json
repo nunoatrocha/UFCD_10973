@@ -1,0 +1,14 @@
+[
+    {
+        "Produto": "Camiseta",
+        "Preço": 19.99,
+        "Quantidade Vendida": 125,
+        "Data": "10-01-2022"
+    },
+    {
+        "Produto": "Calças",
+        "Preço": 29.99,
+        "Quantidade Vendida": 80,
+        "Data": "10-01-2022"
+    }
+]
