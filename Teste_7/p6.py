@@ -10,3 +10,5 @@ def quantidade_total_vendas(nome_do_arquivo_csv):
 
 q_total = quantidade_total_vendas("vendas.csv")         
 print(q_total)
+
+
